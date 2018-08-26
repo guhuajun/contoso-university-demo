@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+  website:
+    image: greggu/contosouniversity:0.1
+    build: 
+      dockerfile: Dockerfile
+      context: .
+    ports:
+    - "8080:80"
